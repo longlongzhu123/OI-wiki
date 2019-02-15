@@ -21,6 +21,14 @@ while !sta.empty() && sta.top()<x
 sta.push(x)
 ```
 
+```
+stack sta;
+function insert(x):
+    while (not sta.empty()) and (sta.top() < x):
+        sta.pop();
+    sta.push(x)
+```
+
 ### 使用
 
 自然就是从栈顶读出来一个元素，该元素满足单调性的某一端。
